@@ -1,0 +1,6 @@
+{
+  "tool": "runtime-calculator",
+  "description": "Battery Runtime Calculator",
+  "dodFactors": { "sli": 0.50, "agm": 0.80, "deepcycle": 0.50 },
+  "voltage": 12
+}

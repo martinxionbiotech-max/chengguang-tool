@@ -1,0 +1,117 @@
+{
+  "brands": [
+    {
+      "make": "Toyota",
+      "models": [
+        {
+          "name": "Camry",
+          "years": "2018-2024",
+          "engines": [
+            { "label": "2.5L Petrol", "displacement": 2.5, "fuel": "gasoline", "battery": "55D23" },
+            { "label": "3.5L Petrol", "displacement": 3.5, "fuel": "gasoline", "battery": "65D26" }
+          ]
+        },
+        {
+          "name": "Hilux",
+          "years": "2015-2024",
+          "engines": [
+            { "label": "2.8L Diesel", "displacement": 2.8, "fuel": "diesel", "battery": "105D31" },
+            { "label": "2.8L Diesel (DIN)", "displacement": 2.8, "fuel": "diesel", "battery": "DIN58043" }
+          ]
+        },
+        {
+          "name": "Corolla",
+          "years": "2019-2024",
+          "engines": [
+            { "label": "1.8L Petrol", "displacement": 1.8, "fuel": "gasoline", "battery": "55B24" }
+          ]
+        }
+      ]
+    },
+    {
+      "make": "Honda",
+      "models": [
+        {
+          "name": "Civic",
+          "years": "2016-2024",
+          "engines": [
+            { "label": "1.5L Turbo Petrol", "displacement": 1.5, "fuel": "gasoline", "battery": "55B24" }
+          ]
+        },
+        {
+          "name": "CR-V",
+          "years": "2017-2024",
+          "engines": [
+            { "label": "1.5L Turbo Petrol", "displacement": 1.5, "fuel": "gasoline", "battery": "55D23" }
+          ]
+        }
+      ]
+    },
+    {
+      "make": "Nissan",
+      "models": [
+        {
+          "name": "Navara",
+          "years": "2015-2024",
+          "engines": [
+            { "label": "2.5L Diesel", "displacement": 2.5, "fuel": "diesel", "battery": "105D31" }
+          ]
+        }
+      ]
+    },
+    {
+      "make": "Ford",
+      "models": [
+        {
+          "name": "Ranger",
+          "years": "2015-2024",
+          "engines": [
+            { "label": "3.2L Diesel", "displacement": 3.2, "fuel": "diesel", "battery": "DIN60038" }
+          ]
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "models": [
+        {
+          "name": "3 Series",
+          "years": "2019-2024",
+          "engines": [
+            { "label": "Various (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" }
+          ]
+        }
+      ]
+    },
+    {
+      "make": "Mercedes-Benz",
+      "models": [
+        {
+          "name": "C-Class",
+          "years": "2015-2024",
+          "engines": [
+            { "label": "Various (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" }
+          ]
+        }
+      ]
+    }
+  ],
+  "batterySpecs": {
+    "55B24": { "model": "CG-55B24", "type": "JIS", "cca": 370, "ah": 45, "dimensions": "238×129×227 mm", "terminal": "JIS T1 (pencil post)", "voltage": "12V", "description": "Compact battery for small-medium petrol engines" },
+    "55D23": { "model": "CG-55D23", "type": "JIS", "cca": 500, "ah": 60, "dimensions": "232×173×225 mm", "terminal": "SAE post", "voltage": "12V", "description": "Mid-size battery for 4-cylinder petrol engines" },
+    "65D26": { "model": "CG-65D26", "type": "JIS", "cca": 520, "ah": 65, "dimensions": "260×173×225 mm", "terminal": "SAE post", "voltage": "12V", "description": "Standard battery for larger petrol/V6 engines" },
+    "95E41": { "model": "CG-95E41", "type": "JIS", "cca": 750, "ah": 80, "dimensions": "306×173×225 mm", "terminal": "SAE post", "voltage": "12V", "description": "Heavy-duty battery for trucks and large SUVs" },
+    "105D31": { "model": "CG-105D31", "type": "JIS", "cca": 650, "ah": 75, "dimensions": "302×173×225 mm", "terminal": "SAE post", "voltage": "12V", "description": "Diesel-grade battery for pickups and SUVs" },
+    "145G51": { "model": "CG-145G51", "type": "JIS", "cca": 850, "ah": 90, "dimensions": "330×173×240 mm", "terminal": "SAE post", "voltage": "12V", "description": "Extra-heavy-duty for commercial vehicles" },
+    "190H52": { "model": "CG-190H52", "type": "JIS", "cca": 1100, "ah": 110, "dimensions": "350×173×240 mm", "terminal": "SAE post", "voltage": "12V", "description": "Maximum-power battery for heavy equipment" },
+    "56638": { "model": "CG-56638", "type": "DIN", "cca": 540, "ah": 66, "dimensions": "278×175×175 mm", "terminal": "SAE post", "voltage": "12V", "description": "DIN standard battery for European vehicles" },
+    "DIN58043": { "model": "CG-DIN58043", "type": "DIN", "cca": 580, "ah": 74, "dimensions": "315×175×175 mm", "terminal": "SAE post", "voltage": "12V", "description": "AGM-compatible DIN battery for European luxury" },
+    "DIN60038": { "model": "CG-DIN60038", "type": "DIN", "cca": 870, "ah": 100, "dimensions": "353×175×190 mm", "terminal": "SAE post", "voltage": "12V", "description": "High-power DIN for large diesel engines" }
+  },
+  "regions": [
+    { "code": "asia", "name": "Asia Pacific", "note": "JIS standard prevalent" },
+    { "code": "europe", "name": "Europe", "note": "DIN/EN standard prevalent" },
+    { "code": "americas", "name": "Americas", "note": "BCI/SAE standard prevalent" },
+    { "code": "mena", "name": "Middle East & Africa", "note": "Mixed JIS/DIN/SAE" }
+  ]
+}

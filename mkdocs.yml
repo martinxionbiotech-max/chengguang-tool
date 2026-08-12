@@ -1,0 +1,51 @@
+site_name: Chengguang Battery Tools
+site_url: https://tool.chengguangenergy.com/
+site_description: Interactive battery tools for Chengguang Energy — finder, calculators, cross-reference, and guides
+theme:
+  name: material
+  palette:
+    primary: deep purple
+    accent: purple
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  logo: null
+  favicon: null
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js
+  - javascripts/extra.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Battery Finder: finder/index.md
+  - CCA Calculator: cca-calculator/index.md
+  - JIS↔DIN Cross-Reference: cross-reference/index.md
+  - Runtime Calculator: runtime-calculator/index.md
+  - Life Estimator: life-estimator/index.md
+  - Ah↔CCA Converter: ah-cca-converter/index.md
+  - Terminal Type Guide: terminal-guide/index.md
+
+plugins:
+  - search
+
+docs_dir: docs
+site_dir: site

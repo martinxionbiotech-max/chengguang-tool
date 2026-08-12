@@ -1,0 +1,5 @@
+{
+  "tool": "terminal-guide",
+  "description": "Interactive terminal type identification guide",
+  "terminalTypes": ["sae-left", "sae-right", "jis-t1", "side", "stud"]
+}

@@ -1,0 +1,5 @@
+{
+  "tool": "ah-cca-converter",
+  "description": "Ah ↔ CCA bidirectional converter",
+  "ratioRange": { "min": 7, "max": 10, "default": 8.5 }
+}

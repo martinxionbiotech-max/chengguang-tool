@@ -1,0 +1,25 @@
+# Chengguang Battery Tools
+> Free interactive automotive battery finders, calculators, and cross-reference tools for battery buyers, mechanics, and distributors.
+
+## Tools
+- [Battery Finder](https://tool.chengguangenergy.com/finder/): Find the correct battery for your vehicle (Make→Model→Engine→Region)
+- [CCA Calculator](https://tool.chengguangenergy.com/cca-calculator/): Calculate required Cold Cranking Amps from engine specs and climate
+- [JIS↔DIN Cross-Reference](https://tool.chengguangenergy.com/cross-reference/): Interactive cross-reference with dimension comparison and fit warnings
+- [Runtime Calculator](https://tool.chengguangenergy.com/runtime-calculator/): Estimate battery runtime under accessory load
+- [Life Estimator](https://tool.chengguangenergy.com/life-estimator/): Predict remaining battery life by age, climate, and usage
+- [Ah↔CCA Converter](https://tool.chengguangenergy.com/ah-cca-converter/): Bidirectional Amp-hours to Cold Cranking Amps conversion
+- [Terminal Guide](https://tool.chengguangenergy.com/terminal-guide/): Interactive decision tree for battery terminal identification
+
+## Articles
+- [What is CCA?](https://tool.chengguangenergy.com/articles/what-is-cca/): Complete guide to Cold Cranking Amps
+- [Battery Life by Climate](https://tool.chengguangenergy.com/articles/battery-life-by-climate/): Climate-specific battery recommendations
+- [How to Test a Car Battery](https://tool.chengguangenergy.com/articles/how-to-test-battery/): 4 testing methods with decision flowchart
+- [Car Battery Buying Guide](https://tool.chengguangenergy.com/articles/battery-buying-guide/): 5-step selection process
+- [Battery Maintenance Tips](https://tool.chengguangenergy.com/articles/battery-maintenance/): Monthly checklist and seasonal care
+
+## Ecosystem
+- [Main Site](https://chengguangenergy.com/): Factory, certifications, contact
+- [Battery Database](https://data.chengguangenergy.com/): Models, specs, cross-reference
+- [Technical Center](https://technical.chengguangenergy.com/): Technology, engineering, testing
+- [OEM Manufacturing](https://oem.chengguangenergy.com/): Private label, custom, process
+- [Market Intelligence](https://market.chengguangenergy.com/): Regional demand, trends

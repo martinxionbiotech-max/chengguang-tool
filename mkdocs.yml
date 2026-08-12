@@ -1,6 +1,6 @@
 site_name: Chengguang Battery Tools
 site_url: https://tool.chengguangenergy.com/
-site_description: Interactive battery tools for Chengguang Energy — finder, calculators, cross-reference, and guides
+site_description: Free interactive battery tools — finder, CCA calculator, JIS↔DIN cross-reference, runtime & life estimators. Built by Chengguang Power Tech, IATF 16949 certified OEM battery manufacturer.
 theme:
   name: material
   palette:
@@ -42,7 +42,13 @@ nav:
   - Runtime Calculator: runtime-calculator/index.md
   - Life Estimator: life-estimator/index.md
   - Ah↔CCA Converter: ah-cca-converter/index.md
-  - Terminal Type Guide: terminal-guide/index.md
+  - Terminal Guide: terminal-guide/index.md
+  - Articles:
+      - What is CCA?: articles/what-is-cca.md
+      - Battery Life by Climate: articles/battery-life-by-climate.md
+      - How to Test a Car Battery: articles/how-to-test-battery.md
+      - Car Battery Buying Guide: articles/battery-buying-guide.md
+      - Battery Maintenance Tips: articles/battery-maintenance.md
 
 plugins:
   - search

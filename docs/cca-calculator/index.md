@@ -1,120 +1,120 @@
-     1|# ❄️ CCA Calculator
-     2|
-     3|Calculate the recommended Cold Cranking Amps (CCA) for your vehicle based on engine specifications.
-     4|
-     5|**Formula:** `Base CCA = Displacement × Factor × Temperature Multiplier`
-     6|
-     7|---
-     8|
-     9|<div x-data="ccaCalculator()" class="tool-card">
-    10|
-    11|### Engine Parameters
-    12|
-    13|<div class="cg-form-group">
-    14|  <label class="cg-label">Engine Displacement (L)</label>
-    15|  <input type="number" class="cg-input" x-model.number="displacement" min="0.5" max="16" step="0.1" placeholder="e.g. 2.5">
-    16|</div>
-    17|
-    18|<div class="cg-form-group">
-    19|  <label class="cg-label">Fuel Type</label>
-    20|  <select class="cg-select" x-model="fuelType">
-    21|    <option value="gasoline">Gasoline (Petrol)</option>
-    22|    <option value="diesel">Diesel</option>
-    23|  </select>
-    24|  <small style="color:#6b7280;">Factor: Gasoline = 170, Diesel = 300</small>
-    25|</div>
-    26|
-    27|<div class="cg-form-group">
-    28|  <label class="cg-label">Lowest Expected Temperature</label>
-    29|  <select class="cg-select" x-model="tempRange">
-    30|    <option value="1.0">Above 0°C (32°F) — Multiplier: 1.0</option>
-    31|    <option value="1.2">0°C to -10°C (32°F to 14°F) — Multiplier: 1.2</option>
-    32|    <option value="1.5">-10°C to -20°C (14°F to -4°F) — Multiplier: 1.5</option>
-    33|    <option value="1.8">-20°C to -30°C (-4°F to -22°F) — Multiplier: 1.8</option>
-    34|    <option value="2.2">Below -30°C (-22°F) — Multiplier: 2.2</option>
-    35|  </select>
-    36|</div>
-    37|
-    38|<button class="cg-btn" @click="calculate()" :disabled="!canCalculate">🧮 Calculate CCA</button>
-    39|
-    40|<!-- Result -->
-    41|<div x-show="result" x-transition class="cg-result" style="display:none;">
-    42|  <h4>📊 Calculation Results</h4>
-    43|  <div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value" x-text="displacement + ' L'"></span></div>
-    44|  <div class="spec-row"><span class="spec-label">Fuel Factor</span><span class="spec-value" x-text="fuelFactor"></span></div>
-    45|  <div class="spec-row"><span class="spec-label">Temperature Multiplier</span><span class="spec-value" x-text="'×' + tempRange"></span></div>
-    46|  <div class="spec-row" style="font-size:1.1rem;border-bottom:2px solid var(--cg-purple);">
-    47|    <span class="spec-label">Recommended CCA</span>
-    48|    <span class="spec-value" x-text="resultCca + ' A'"></span>
-    49|  </div>
-    50|  <div style="margin-top:1rem;">
-    51|    <strong>🔋 Matching Chengguang Models:</strong>
-    52|    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.5rem;" x-html="matchingModelsHtml"></div>
-    53|  </div>
-    54|  <div style="margin-top:1rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
-    55|    <a href="https://oem.chengguangenergy.com" class="cg-btn" target="_blank">📋 OEM Inquiry</a>
-    56|    <a href="https://data.chengguangenergy.com" class="cg-btn cg-btn-outline" target="_blank">📊 Browse All Models</a>
-    57|  </div>
-    58|</div>
-    59|
-    60|</div>
-    61|
-    62|<script>
-    63|function ccaCalculator() {
-    64|  return {
-    65|    displacement: '',
-    66|    fuelType: 'gasoline',
-    67|    tempRange: '1.0',
-    68|    result: false,
-    69|    resultCca: 0,
-    70|    fuelFactor: 0,
-    71|    matchingModelsHtml: '',
-    72|
-    73|    // Chengguang model CCA specs
-    74|    batteryModels: [
-    75|      { model: 'CG-55B24', cca: 370, ah: 45, dims: '238×129×227 mm' },
-    76|      { model: 'CG-55D23', cca: 500, ah: 60, dims: '232×173×225 mm' },
-    77|      { model: 'CG-65D26', cca: 520, ah: 65, dims: '260×173×225 mm' },
-    78|      { model: 'CG-95E41', cca: 750, ah: 80, dims: '306×173×225 mm' },
-    79|      { model: 'CG-105D31', cca: 650, ah: 75, dims: '302×173×225 mm' },
-    80|      { model: 'CG-145G51', cca: 850, ah: 90, dims: '330×173×240 mm' },
-    81|      { model: 'CG-190H52', cca: 1100, ah: 110, dims: '350×173×240 mm' },
-    82|      { model: 'CG-56638', cca: 540, ah: 66, dims: '278×175×175 mm' },
-    83|      { model: 'CG-DIN58043', cca: 580, ah: 74, dims: '315×175×175 mm' },
-    84|      { model: 'CG-DIN60038', cca: 870, ah: 100, dims: '353×175×190 mm' }
-    85|    ],
-    86|
-    87|    get canCalculate() {
-    88|      return this.displacement > 0;
-    89|    },
-    90|
-    91|    calculate() {
-    92|      if (!this.canCalculate) return;
-    93|      const factor = this.fuelType === 'diesel' ? 300 : 170;
-    94|      const temp = parseFloat(this.tempRange);
-    95|      this.fuelFactor = factor;
-    96|      this.resultCca = Math.round(this.displacement * factor * temp);
-    97|
-    98|      // Find matching models (CCA >= requested)
-    99|      const matches = this.batteryModels
-   100|        .filter(b => b.cca >= this.resultCca)
-   101|        .sort((a, b) => a.cca - b.cca);
-   102|
-   103|      if (matches.length === 0) {
-   104|        this.matchingModelsHtml = '<span style="color:#ef4444;">No matching models. Please contact OEM for custom solution.</span>';
-   105|      } else {
-   106|        this.matchingModelsHtml = matches.map(m =>
-   107|          `<span style="display:inline-block;background:#ede9fe;color:#4c1d95;padding:6px 12px;border-radius:20px;font-weight:600;font-size:0.9rem;">${m.model} (${m.cca} CCA, ${m.ah}Ah)</span>`
-   108|        ).join('');
-   109|      }
-   110|
-   111|      this.result = true;
-   112|    }
-   113|  };
-   114|}
-   115|</script>
-   116|
-   117|---
+# ❄️ CCA Calculator
+
+Calculate the recommended Cold Cranking Amps (CCA) for your vehicle based on engine specifications.
+
+**Formula:** `Base CCA = Displacement × Factor × Temperature Multiplier`
+
+---
+
+<div x-data="ccaCalculator()" class="tool-card" markdown="1">
+
+### Engine Parameters
+
+<div class="cg-form-group">
+  <label class="cg-label">Engine Displacement (L)</label>
+  <input type="number" class="cg-input" x-model.number="displacement" min="0.5" max="16" step="0.1" placeholder="e.g. 2.5">
+</div>
+
+<div class="cg-form-group">
+  <label class="cg-label">Fuel Type</label>
+  <select class="cg-select" x-model="fuelType">
+    <option value="gasoline">Gasoline (Petrol)</option>
+    <option value="diesel">Diesel</option>
+  </select>
+  <small style="color:#6b7280;">Factor: Gasoline = 170, Diesel = 300</small>
+</div>
+
+<div class="cg-form-group">
+  <label class="cg-label">Lowest Expected Temperature</label>
+  <select class="cg-select" x-model="tempRange">
+    <option value="1.0">Above 0°C (32°F) — Multiplier: 1.0</option>
+    <option value="1.2">0°C to -10°C (32°F to 14°F) — Multiplier: 1.2</option>
+    <option value="1.5">-10°C to -20°C (14°F to -4°F) — Multiplier: 1.5</option>
+    <option value="1.8">-20°C to -30°C (-4°F to -22°F) — Multiplier: 1.8</option>
+    <option value="2.2">Below -30°C (-22°F) — Multiplier: 2.2</option>
+  </select>
+</div>
+
+<button class="cg-btn" @click="calculate()" :disabled="!canCalculate">🧮 Calculate CCA</button>
+
+<!-- Result -->
+<div x-show="result" x-transition class="cg-result" style="display:none;">
+  <h4>📊 Calculation Results</h4>
+  <div class="spec-row"><span class="spec-label">Displacement</span><span class="spec-value" x-text="displacement + ' L'"></span></div>
+  <div class="spec-row"><span class="spec-label">Fuel Factor</span><span class="spec-value" x-text="fuelFactor"></span></div>
+  <div class="spec-row"><span class="spec-label">Temperature Multiplier</span><span class="spec-value" x-text="'×' + tempRange"></span></div>
+  <div class="spec-row" style="font-size:1.1rem;border-bottom:2px solid var(--cg-purple);">
+    <span class="spec-label">Recommended CCA</span>
+    <span class="spec-value" x-text="resultCca + ' A'"></span>
+  </div>
+  <div style="margin-top:1rem;">
+    <strong>🔋 Matching Chengguang Models:</strong>
+    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.5rem;" x-html="matchingModelsHtml"></div>
+  </div>
+  <div style="margin-top:1rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
+    <a href="https://oem.chengguangenergy.com" class="cg-btn" target="_blank">📋 OEM Inquiry</a>
+    <a href="https://data.chengguangenergy.com" class="cg-btn cg-btn-outline" target="_blank">📊 Browse All Models</a>
+  </div>
+</div>
+
+</div>
+
+<script>
+function ccaCalculator() {
+  return {
+    displacement: '',
+    fuelType: 'gasoline',
+    tempRange: '1.0',
+    result: false,
+    resultCca: 0,
+    fuelFactor: 0,
+    matchingModelsHtml: '',
+
+    // Chengguang model CCA specs
+    batteryModels: [
+      { model: 'CG-55B24', cca: 370, ah: 45, dims: '238×129×227 mm' },
+      { model: 'CG-55D23', cca: 500, ah: 60, dims: '232×173×225 mm' },
+      { model: 'CG-65D26', cca: 520, ah: 65, dims: '260×173×225 mm' },
+      { model: 'CG-95E41', cca: 750, ah: 80, dims: '306×173×225 mm' },
+      { model: 'CG-105D31', cca: 650, ah: 75, dims: '302×173×225 mm' },
+      { model: 'CG-145G51', cca: 850, ah: 90, dims: '330×173×240 mm' },
+      { model: 'CG-190H52', cca: 1100, ah: 110, dims: '350×173×240 mm' },
+      { model: 'CG-56638', cca: 540, ah: 66, dims: '278×175×175 mm' },
+      { model: 'CG-DIN58043', cca: 580, ah: 74, dims: '315×175×175 mm' },
+      { model: 'CG-DIN60038', cca: 870, ah: 100, dims: '353×175×190 mm' }
+    ],
+
+    get canCalculate() {
+      return this.displacement > 0;
+    },
+
+    calculate() {
+      if (!this.canCalculate) return;
+      const factor = this.fuelType === 'diesel' ? 300 : 170;
+      const temp = parseFloat(this.tempRange);
+      this.fuelFactor = factor;
+      this.resultCca = Math.round(this.displacement * factor * temp);
+
+      // Find matching models (CCA >= requested)
+      const matches = this.batteryModels
+        .filter(b => b.cca >= this.resultCca)
+        .sort((a, b) => a.cca - b.cca);
+
+      if (matches.length === 0) {
+        this.matchingModelsHtml = '<span style="color:#ef4444;">No matching models. Please contact OEM for custom solution.</span>';
+      } else {
+        this.matchingModelsHtml = matches.map(m =>
+          `<span style="display:inline-block;background:#ede9fe;color:#4c1d95;padding:6px 12px;border-radius:20px;font-weight:600;font-size:0.9rem;">${m.model} (${m.cca} CCA, ${m.ah}Ah)</span>`
+        ).join('');
+      }
+
+      this.result = true;
+    }
+  };
+}
+</script>
+
+---
 
 <script type="application/ld+json">
 {
@@ -135,16 +135,16 @@
 </script>
 
 
-   118|
-   119|<div class="ecosystem-footer" x-data="ecosystem">
-   120|<h4>🌐 Explore the Chengguang Ecosystem</h4>
-   121|<div class="ecosystem-links">
-   122|  <template x-for="site in sites" :key="site.url">
-   123|    <a :href="site.url" class="eco-link" :class="{ active: site.active }" x-text="site.name" target="_blank"></a>
-   124|  </template>
-   125|</div>
-   126|</div>
-   127|
+
+<div class="ecosystem-footer" x-data="ecosystem">
+<h4>🌐 Explore the Chengguang Ecosystem</h4>
+<div class="ecosystem-links">
+  <template x-for="site in sites" :key="site.url">
+    <a :href="site.url" class="eco-link" :class="{ active: site.active }" x-text="site.name" target="_blank"></a>
+  </template>
+</div>
+</div>
+
 
 ---
 

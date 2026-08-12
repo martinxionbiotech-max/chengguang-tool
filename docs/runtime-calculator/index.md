@@ -1,125 +1,125 @@
-     1|# ⏱️ Battery Runtime Calculator
-     2|
-     3|Estimate how long a battery will power a given load. Based on Amp-hour capacity, battery type, and load wattage.
-     4|
-     5|**Formula:** `Runtime (hours) = (Ah × DoD) ÷ (Watts ÷ 12V)`
-     6|
-     7|---
-     8|
-     9|<div x-data="runtimeCalculator()" class="tool-card">
-    10|
-    11|### Battery & Load Parameters
-    12|
-    13|<div class="cg-form-group">
-    14|  <label class="cg-label">Battery Capacity (Ah)</label>
-    15|  <input type="number" class="cg-input" x-model.number="capacityAh" min="10" max="300" step="1" placeholder="e.g. 60">
-    16|</div>
-    17|
-    18|<div class="cg-form-group">
-    19|  <label class="cg-label">Battery Type</label>
-    20|  <select class="cg-select" x-model="batteryType">
-    21|    <option value="sli">SLI (Starting/Lighting/Ignition) — 50% DoD safe</option>
-    22|    <option value="agm">AGM (Absorbent Glass Mat) — 80% DoD safe</option>
-    23|    <option value="deepcycle">Deep Cycle — 50% DoD safe (designed for deep discharge)</option>
-    24|  </select>
-    25|  <small style="color:#6b7280;">DoD = Depth of Discharge safe limit</small>
-    26|</div>
-    27|
-    28|<div class="cg-form-group">
-    29|  <label class="cg-label">Continuous Load (Watts)</label>
-    30|  <input type="number" class="cg-input" x-model.number="loadWatts" min="1" max="5000" step="1" placeholder="e.g. 120">
-    31|  <small style="color:#6b7280;">Total wattage of connected devices</small>
-    32|</div>
-    33|
-    34|<button class="cg-btn" @click="calculate()" :disabled="!canCalculate">⏱️ Calculate Runtime</button>
-    35|
-    36|<!-- Result -->
-    37|<div x-show="result" x-transition class="cg-result" style="display:none;">
-    38|  <h4>⏱️ Runtime Estimate</h4>
-    39|  <div class="spec-row"><span class="spec-label">Battery Capacity</span><span class="spec-value" x-text="capacityAh + ' Ah'"></span></div>
-    40|  <div class="spec-row"><span class="spec-label">Usable Capacity (DoD)</span><span class="spec-value" x-text="usableAh + ' Ah (' + (dodPercent * 100) + '%)'"></span></div>
-    41|  <div class="spec-row"><span class="spec-label">Load Current</span><span class="spec-value" x-text="loadAmps + ' A'"></span></div>
-    42|  <div class="spec-row"><span class="spec-label">Load Power</span><span class="spec-value" x-text="loadWatts + ' W @ 12V'"></span></div>
-    43|  <div class="spec-row" style="font-size:1.2rem;border-bottom:2px solid var(--cg-purple);">
-    44|    <span class="spec-label">Estimated Runtime</span>
-    45|    <span class="spec-value" x-text="resultHours"></span>
-    46|  </div>
-    47|
-    48|  <div x-show="wattWarning" class="cg-warning" x-text="wattWarning"></div>
-    49|
-    50|  <div style="margin-top:1rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
-    51|    <a href="https://oem.chengguangenergy.com" class="cg-btn" target="_blank">📋 OEM Inquiry</a>
-    52|    <a href="https://data.chengguangenergy.com" class="cg-btn cg-btn-outline" target="_blank">📊 Battery Datasheets</a>
-    53|  </div>
-    54|</div>
-    55|
-    56|</div>
-    57|
-    58|<script>
-    59|function runtimeCalculator() {
-    60|  return {
-    61|    capacityAh: '',
-    62|    batteryType: 'sli',
-    63|    loadWatts: '',
-    64|    result: false,
-    65|    usableAh: 0,
-    66|    dodPercent: 0,
-    67|    loadAmps: 0,
-    68|    resultHours: '',
-    69|    wattWarning: '',
-    70|
-    71|    get canCalculate() {
-    72|      return this.capacityAh > 0 && this.loadWatts > 0;
-    73|    },
-    74|
-    75|    calculate() {
-    76|      if (!this.canCalculate) return;
-    77|      this.wattWarning = '';
-    78|
-    79|      // Determine DoD by battery type
-    80|      let dod;
-    81|      switch (this.batteryType) {
-    82|        case 'agm': dod = 0.80; break;
-    83|        case 'deepcycle': dod = 0.50; break;
-    84|        case 'sli':
-    85|        default: dod = 0.50; break;
-    86|      }
-    87|      this.dodPercent = dod;
-    88|      this.usableAh = Math.round(this.capacityAh * dod * 10) / 10;
-    89|
-    90|      // Load current at 12V
-    91|      this.loadAmps = Math.round((this.loadWatts / 12) * 100) / 100;
-    92|
-    93|      // Runtime
-    94|      const hours = this.usableAh / this.loadAmps;
-    95|      if (hours >= 24) {
-    96|        const days = Math.floor(hours / 24);
-    97|        const remainingHours = Math.round(hours % 24);
-    98|        this.resultHours = `${days} day${days > 1 ? 's' : ''} ${remainingHours} hour${remainingHours !== 1 ? 's' : ''} (${Math.round(hours)} h total)`;
-    99|      } else if (hours >= 1) {
-   100|        const wholeHours = Math.floor(hours);
-   101|        const mins = Math.round((hours - wholeHours) * 60);
-   102|        this.resultHours = `${wholeHours} hour${wholeHours > 1 ? 's' : ''} ${mins} min${mins !== 1 ? 's' : ''} (${Math.round(hours * 100) / 100} h)`;
-   103|      } else {
-   104|        const mins = Math.round(hours * 60);
-   105|        this.resultHours = `${mins} minute${mins !== 1 ? 's' : ''} (${Math.round(hours * 100) / 100} h)`;
-   106|      }
-   107|
-   108|      // Warnings
-   109|      if (this.loadWatts > 1000) {
-   110|        this.wattWarning = '⚠️ High load detected. For loads above 1000W, consider using a deep-cycle or AGM battery and verify wiring gauge is adequate.';
-   111|      }
-   112|      if (this.batteryType === 'sli' && hours < 2) {
-   113|        this.wattWarning = (this.wattWarning ? this.wattWarning + ' ' : '') + '⚠️ SLI batteries are not designed for sustained deep discharge. Repeated deep cycling will reduce lifespan significantly.';
-   114|      }
-   115|
-   116|      this.result = true;
-   117|    }
-   118|  };
-   119|}
-   120|</script>
-   121|
-   122|---
+# ⏱️ Battery Runtime Calculator
+
+Estimate how long a battery will power a given load. Based on Amp-hour capacity, battery type, and load wattage.
+
+**Formula:** `Runtime (hours) = (Ah × DoD) ÷ (Watts ÷ 12V)`
+
+---
+
+<div x-data="runtimeCalculator()" class="tool-card" markdown="1">
+
+### Battery & Load Parameters
+
+<div class="cg-form-group">
+  <label class="cg-label">Battery Capacity (Ah)</label>
+  <input type="number" class="cg-input" x-model.number="capacityAh" min="10" max="300" step="1" placeholder="e.g. 60">
+</div>
+
+<div class="cg-form-group">
+  <label class="cg-label">Battery Type</label>
+  <select class="cg-select" x-model="batteryType">
+    <option value="sli">SLI (Starting/Lighting/Ignition) — 50% DoD safe</option>
+    <option value="agm">AGM (Absorbent Glass Mat) — 80% DoD safe</option>
+    <option value="deepcycle">Deep Cycle — 50% DoD safe (designed for deep discharge)</option>
+  </select>
+  <small style="color:#6b7280;">DoD = Depth of Discharge safe limit</small>
+</div>
+
+<div class="cg-form-group">
+  <label class="cg-label">Continuous Load (Watts)</label>
+  <input type="number" class="cg-input" x-model.number="loadWatts" min="1" max="5000" step="1" placeholder="e.g. 120">
+  <small style="color:#6b7280;">Total wattage of connected devices</small>
+</div>
+
+<button class="cg-btn" @click="calculate()" :disabled="!canCalculate">⏱️ Calculate Runtime</button>
+
+<!-- Result -->
+<div x-show="result" x-transition class="cg-result" style="display:none;">
+  <h4>⏱️ Runtime Estimate</h4>
+  <div class="spec-row"><span class="spec-label">Battery Capacity</span><span class="spec-value" x-text="capacityAh + ' Ah'"></span></div>
+  <div class="spec-row"><span class="spec-label">Usable Capacity (DoD)</span><span class="spec-value" x-text="usableAh + ' Ah (' + (dodPercent * 100) + '%)'"></span></div>
+  <div class="spec-row"><span class="spec-label">Load Current</span><span class="spec-value" x-text="loadAmps + ' A'"></span></div>
+  <div class="spec-row"><span class="spec-label">Load Power</span><span class="spec-value" x-text="loadWatts + ' W @ 12V'"></span></div>
+  <div class="spec-row" style="font-size:1.2rem;border-bottom:2px solid var(--cg-purple);">
+    <span class="spec-label">Estimated Runtime</span>
+    <span class="spec-value" x-text="resultHours"></span>
+  </div>
+
+  <div x-show="wattWarning" class="cg-warning" x-text="wattWarning"></div>
+
+  <div style="margin-top:1rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
+    <a href="https://oem.chengguangenergy.com" class="cg-btn" target="_blank">📋 OEM Inquiry</a>
+    <a href="https://data.chengguangenergy.com" class="cg-btn cg-btn-outline" target="_blank">📊 Battery Datasheets</a>
+  </div>
+</div>
+
+</div>
+
+<script>
+function runtimeCalculator() {
+  return {
+    capacityAh: '',
+    batteryType: 'sli',
+    loadWatts: '',
+    result: false,
+    usableAh: 0,
+    dodPercent: 0,
+    loadAmps: 0,
+    resultHours: '',
+    wattWarning: '',
+
+    get canCalculate() {
+      return this.capacityAh > 0 && this.loadWatts > 0;
+    },
+
+    calculate() {
+      if (!this.canCalculate) return;
+      this.wattWarning = '';
+
+      // Determine DoD by battery type
+      let dod;
+      switch (this.batteryType) {
+        case 'agm': dod = 0.80; break;
+        case 'deepcycle': dod = 0.50; break;
+        case 'sli':
+        default: dod = 0.50; break;
+      }
+      this.dodPercent = dod;
+      this.usableAh = Math.round(this.capacityAh * dod * 10) / 10;
+
+      // Load current at 12V
+      this.loadAmps = Math.round((this.loadWatts / 12) * 100) / 100;
+
+      // Runtime
+      const hours = this.usableAh / this.loadAmps;
+      if (hours >= 24) {
+        const days = Math.floor(hours / 24);
+        const remainingHours = Math.round(hours % 24);
+        this.resultHours = `${days} day${days > 1 ? 's' : ''} ${remainingHours} hour${remainingHours !== 1 ? 's' : ''} (${Math.round(hours)} h total)`;
+      } else if (hours >= 1) {
+        const wholeHours = Math.floor(hours);
+        const mins = Math.round((hours - wholeHours) * 60);
+        this.resultHours = `${wholeHours} hour${wholeHours > 1 ? 's' : ''} ${mins} min${mins !== 1 ? 's' : ''} (${Math.round(hours * 100) / 100} h)`;
+      } else {
+        const mins = Math.round(hours * 60);
+        this.resultHours = `${mins} minute${mins !== 1 ? 's' : ''} (${Math.round(hours * 100) / 100} h)`;
+      }
+
+      // Warnings
+      if (this.loadWatts > 1000) {
+        this.wattWarning = '⚠️ High load detected. For loads above 1000W, consider using a deep-cycle or AGM battery and verify wiring gauge is adequate.';
+      }
+      if (this.batteryType === 'sli' && hours < 2) {
+        this.wattWarning = (this.wattWarning ? this.wattWarning + ' ' : '') + '⚠️ SLI batteries are not designed for sustained deep discharge. Repeated deep cycling will reduce lifespan significantly.';
+      }
+
+      this.result = true;
+    }
+  };
+}
+</script>
+
+---
 
 <script type="application/ld+json">
 {
@@ -140,16 +140,16 @@
 </script>
 
 
-   123|
-   124|<div class="ecosystem-footer" x-data="ecosystem">
-   125|<h4>🌐 Explore the Chengguang Ecosystem</h4>
-   126|<div class="ecosystem-links">
-   127|  <template x-for="site in sites" :key="site.url">
-   128|    <a :href="site.url" class="eco-link" :class="{ active: site.active }" x-text="site.name" target="_blank"></a>
-   129|  </template>
-   130|</div>
-   131|</div>
-   132|
+
+<div class="ecosystem-footer" x-data="ecosystem">
+<h4>🌐 Explore the Chengguang Ecosystem</h4>
+<div class="ecosystem-links">
+  <template x-for="site in sites" :key="site.url">
+    <a :href="site.url" class="eco-link" :class="{ active: site.active }" x-text="site.name" target="_blank"></a>
+  </template>
+</div>
+</div>
+
 
 ---
 

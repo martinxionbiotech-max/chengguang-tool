@@ -3,115 +3,411 @@
     {
       "make": "Toyota",
       "models": [
-        {
-          "name": "Camry",
-          "years": "2018-2024",
-          "engines": [
-            { "label": "2.5L Petrol", "displacement": 2.5, "fuel": "gasoline", "battery": "55D23" },
-            { "label": "3.5L Petrol", "displacement": 3.5, "fuel": "gasoline", "battery": "65D26" }
-          ]
-        },
-        {
-          "name": "Hilux",
-          "years": "2015-2024",
-          "engines": [
-            { "label": "2.8L Diesel", "displacement": 2.8, "fuel": "diesel", "battery": "105D31" },
-            { "label": "2.8L Diesel (DIN)", "displacement": 2.8, "fuel": "diesel", "battery": "DIN58043" }
-          ]
-        },
-        {
-          "name": "Corolla",
-          "years": "2019-2024",
-          "engines": [
-            { "label": "1.8L Petrol", "displacement": 1.8, "fuel": "gasoline", "battery": "55B24" }
-          ]
-        }
+        { "name": "Camry", "years": "2012-2024", "engines": [
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.5L Petrol", "displacement": 2.5, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "3.5L V6 Petrol", "displacement": 3.5, "fuel": "gasoline", "battery": "65D26" }
+        ]},
+        { "name": "Corolla", "years": "2014-2024", "engines": [
+          { "label": "1.6L Petrol", "displacement": 1.6, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "1.8L Petrol", "displacement": 1.8, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" }
+        ]},
+        { "name": "Hilux", "years": "2015-2024", "engines": [
+          { "label": "2.4L Diesel", "displacement": 2.4, "fuel": "diesel", "battery": "105D31" },
+          { "label": "2.8L Diesel", "displacement": 2.8, "fuel": "diesel", "battery": "105D31" },
+          { "label": "2.8L Diesel (DIN)", "displacement": 2.8, "fuel": "diesel", "battery": "DIN58043" },
+          { "label": "2.7L Petrol", "displacement": 2.7, "fuel": "gasoline", "battery": "65D26" }
+        ]},
+        { "name": "Land Cruiser", "years": "2008-2024", "engines": [
+          { "label": "4.0L V6 Petrol", "displacement": 4.0, "fuel": "gasoline", "battery": "95E41" },
+          { "label": "4.5L V8 Diesel", "displacement": 4.5, "fuel": "diesel", "battery": "145G51" },
+          { "label": "3.3L V6 Diesel", "displacement": 3.3, "fuel": "diesel", "battery": "95E41" }
+        ]},
+        { "name": "Land Cruiser Prado", "years": "2010-2024", "engines": [
+          { "label": "2.7L Petrol", "displacement": 2.7, "fuel": "gasoline", "battery": "65D26" },
+          { "label": "3.0L Diesel", "displacement": 3.0, "fuel": "diesel", "battery": "95E41" },
+          { "label": "2.8L Diesel", "displacement": 2.8, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "RAV4", "years": "2016-2024", "engines": [
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.5L Hybrid", "displacement": 2.5, "fuel": "gasoline", "battery": "55D23" }
+        ]},
+        { "name": "Fortuner", "years": "2016-2024", "engines": [
+          { "label": "2.7L Petrol", "displacement": 2.7, "fuel": "gasoline", "battery": "65D26" },
+          { "label": "2.8L Diesel", "displacement": 2.8, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "Hiace", "years": "2010-2024", "engines": [
+          { "label": "2.7L Petrol", "displacement": 2.7, "fuel": "gasoline", "battery": "65D26" },
+          { "label": "3.0L Diesel", "displacement": 3.0, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "Yaris", "years": "2014-2024", "engines": [
+          { "label": "1.3L Petrol", "displacement": 1.3, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "1.5L Petrol", "displacement": 1.5, "fuel": "gasoline", "battery": "55B24" }
+        ]}
       ]
     },
     {
       "make": "Honda",
       "models": [
-        {
-          "name": "Civic",
-          "years": "2016-2024",
-          "engines": [
-            { "label": "1.5L Turbo Petrol", "displacement": 1.5, "fuel": "gasoline", "battery": "55B24" }
-          ]
-        },
-        {
-          "name": "CR-V",
-          "years": "2017-2024",
-          "engines": [
-            { "label": "1.5L Turbo Petrol", "displacement": 1.5, "fuel": "gasoline", "battery": "55D23" }
-          ]
-        }
+        { "name": "Civic", "years": "2016-2024", "engines": [
+          { "label": "1.5L Turbo", "displacement": 1.5, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "1.8L Petrol", "displacement": 1.8, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" }
+        ]},
+        { "name": "CR-V", "years": "2017-2024", "engines": [
+          { "label": "1.5L Turbo", "displacement": 1.5, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.4L Petrol", "displacement": 2.4, "fuel": "gasoline", "battery": "65D26" }
+        ]},
+        { "name": "Accord", "years": "2016-2024", "engines": [
+          { "label": "1.5L Turbo", "displacement": 1.5, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.0L Turbo", "displacement": 2.0, "fuel": "gasoline", "battery": "65D26" },
+          { "label": "2.4L Petrol", "displacement": 2.4, "fuel": "gasoline", "battery": "65D26" }
+        ]},
+        { "name": "HR-V", "years": "2016-2024", "engines": [
+          { "label": "1.5L Petrol", "displacement": 1.5, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "1.8L Petrol", "displacement": 1.8, "fuel": "gasoline", "battery": "55B24" }
+        ]},
+        { "name": "Pilot", "years": "2016-2024", "engines": [
+          { "label": "3.5L V6 Petrol", "displacement": 3.5, "fuel": "gasoline", "battery": "65D26" }
+        ]}
       ]
     },
     {
       "make": "Nissan",
       "models": [
-        {
-          "name": "Navara",
-          "years": "2015-2024",
-          "engines": [
-            { "label": "2.5L Diesel", "displacement": 2.5, "fuel": "diesel", "battery": "105D31" }
-          ]
-        }
+        { "name": "Navara", "years": "2015-2024", "engines": [
+          { "label": "2.3L Diesel", "displacement": 2.3, "fuel": "diesel", "battery": "105D31" },
+          { "label": "2.5L Diesel", "displacement": 2.5, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "Patrol", "years": "2010-2024", "engines": [
+          { "label": "5.6L V8 Petrol", "displacement": 5.6, "fuel": "gasoline", "battery": "95E41" },
+          { "label": "4.0L V6 Petrol", "displacement": 4.0, "fuel": "gasoline", "battery": "95E41" }
+        ]},
+        { "name": "X-Trail", "years": "2014-2024", "engines": [
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.5L Petrol", "displacement": 2.5, "fuel": "gasoline", "battery": "65D26" }
+        ]},
+        { "name": "Sunny / Almera", "years": "2012-2024", "engines": [
+          { "label": "1.5L Petrol", "displacement": 1.5, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "1.6L Petrol", "displacement": 1.6, "fuel": "gasoline", "battery": "55B24" }
+        ]},
+        { "name": "Qashqai", "years": "2014-2024", "engines": [
+          { "label": "1.3L Turbo", "displacement": 1.3, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" }
+        ]}
+      ]
+    },
+    {
+      "make": "Mitsubishi",
+      "models": [
+        { "name": "L200 / Triton", "years": "2015-2024", "engines": [
+          { "label": "2.4L Diesel", "displacement": 2.4, "fuel": "diesel", "battery": "105D31" },
+          { "label": "2.5L Diesel", "displacement": 2.5, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "Pajero / Montero", "years": "2006-2024", "engines": [
+          { "label": "3.0L V6 Petrol", "displacement": 3.0, "fuel": "gasoline", "battery": "65D26" },
+          { "label": "3.2L Diesel", "displacement": 3.2, "fuel": "diesel", "battery": "95E41" },
+          { "label": "3.8L V6 Petrol", "displacement": 3.8, "fuel": "gasoline", "battery": "95E41" }
+        ]},
+        { "name": "Outlander", "years": "2016-2024", "engines": [
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.4L Petrol", "displacement": 2.4, "fuel": "gasoline", "battery": "65D26" }
+        ]},
+        { "name": "Pajero Sport", "years": "2016-2024", "engines": [
+          { "label": "2.4L Diesel", "displacement": 2.4, "fuel": "diesel", "battery": "105D31" }
+        ]}
+      ]
+    },
+    {
+      "make": "Mazda",
+      "models": [
+        { "name": "CX-5", "years": "2017-2024", "engines": [
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.5L Petrol", "displacement": 2.5, "fuel": "gasoline", "battery": "65D26" },
+          { "label": "2.2L Diesel", "displacement": 2.2, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "Mazda 3", "years": "2014-2024", "engines": [
+          { "label": "1.5L Petrol", "displacement": 1.5, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" }
+        ]},
+        { "name": "Mazda 6", "years": "2014-2024", "engines": [
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.5L Petrol", "displacement": 2.5, "fuel": "gasoline", "battery": "65D26" }
+        ]},
+        { "name": "BT-50", "years": "2015-2024", "engines": [
+          { "label": "2.2L Diesel", "displacement": 2.2, "fuel": "diesel", "battery": "105D31" },
+          { "label": "3.0L Diesel", "displacement": 3.0, "fuel": "diesel", "battery": "105D31" }
+        ]}
+      ]
+    },
+    {
+      "make": "Suzuki",
+      "models": [
+        { "name": "Swift", "years": "2017-2024", "engines": [
+          { "label": "1.2L Petrol", "displacement": 1.2, "fuel": "gasoline", "battery": "55B24" }
+        ]},
+        { "name": "Vitara", "years": "2015-2024", "engines": [
+          { "label": "1.6L Petrol", "displacement": 1.6, "fuel": "gasoline", "battery": "55B24" }
+        ]},
+        { "name": "Jimny", "years": "2018-2024", "engines": [
+          { "label": "1.5L Petrol", "displacement": 1.5, "fuel": "gasoline", "battery": "55B24" }
+        ]}
+      ]
+    },
+    {
+      "make": "Isuzu",
+      "models": [
+        { "name": "D-Max", "years": "2015-2024", "engines": [
+          { "label": "1.9L Diesel", "displacement": 1.9, "fuel": "diesel", "battery": "105D31" },
+          { "label": "3.0L Diesel", "displacement": 3.0, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "MU-X", "years": "2017-2024", "engines": [
+          { "label": "1.9L Diesel", "displacement": 1.9, "fuel": "diesel", "battery": "105D31" },
+          { "label": "3.0L Diesel", "displacement": 3.0, "fuel": "diesel", "battery": "105D31" }
+        ]}
+      ]
+    },
+    {
+      "make": "Lexus",
+      "models": [
+        { "name": "LX 570", "years": "2008-2024", "engines": [
+          { "label": "5.7L V8 Petrol", "displacement": 5.7, "fuel": "gasoline", "battery": "95E41" }
+        ]},
+        { "name": "ES 350", "years": "2016-2024", "engines": [
+          { "label": "3.5L V6 Petrol", "displacement": 3.5, "fuel": "gasoline", "battery": "65D26" }
+        ]}
+      ]
+    },
+    {
+      "make": "Hyundai",
+      "models": [
+        { "name": "Tucson", "years": "2016-2024", "engines": [
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" }
+        ]},
+        { "name": "Santa Fe", "years": "2016-2024", "engines": [
+          { "label": "2.4L Petrol", "displacement": 2.4, "fuel": "gasoline", "battery": "65D26" },
+          { "label": "2.2L Diesel", "displacement": 2.2, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "Elantra", "years": "2017-2024", "engines": [
+          { "label": "1.6L Petrol", "displacement": 1.6, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" }
+        ]},
+        { "name": "H-1 / Starex", "years": "2010-2024", "engines": [
+          { "label": "2.5L Diesel", "displacement": 2.5, "fuel": "diesel", "battery": "105D31" }
+        ]}
+      ]
+    },
+    {
+      "make": "Kia",
+      "models": [
+        { "name": "Sportage", "years": "2017-2024", "engines": [
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" }
+        ]},
+        { "name": "Sorento", "years": "2016-2024", "engines": [
+          { "label": "2.4L Petrol", "displacement": 2.4, "fuel": "gasoline", "battery": "65D26" },
+          { "label": "2.2L Diesel", "displacement": 2.2, "fuel": "diesel", "battery": "105D31" }
+        ]}
       ]
     },
     {
       "make": "Ford",
       "models": [
-        {
-          "name": "Ranger",
-          "years": "2015-2024",
-          "engines": [
-            { "label": "3.2L Diesel", "displacement": 3.2, "fuel": "diesel", "battery": "DIN60038" }
-          ]
-        }
+        { "name": "Ranger", "years": "2015-2024", "engines": [
+          { "label": "2.2L Diesel", "displacement": 2.2, "fuel": "diesel", "battery": "105D31" },
+          { "label": "3.2L Diesel", "displacement": 3.2, "fuel": "diesel", "battery": "DIN60038" },
+          { "label": "2.0L Diesel (Bi-Turbo)", "displacement": 2.0, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "Everest", "years": "2015-2024", "engines": [
+          { "label": "3.2L Diesel", "displacement": 3.2, "fuel": "diesel", "battery": "DIN60038" },
+          { "label": "2.0L Diesel (Bi-Turbo)", "displacement": 2.0, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "Focus", "years": "2012-2020", "engines": [
+          { "label": "1.6L Petrol", "displacement": 1.6, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" }
+        ]}
+      ]
+    },
+    {
+      "make": "Chevrolet",
+      "models": [
+        { "name": "Trailblazer", "years": "2013-2024", "engines": [
+          { "label": "2.8L Diesel", "displacement": 2.8, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "Colorado", "years": "2013-2024", "engines": [
+          { "label": "2.5L Diesel", "displacement": 2.5, "fuel": "diesel", "battery": "105D31" },
+          { "label": "2.8L Diesel", "displacement": 2.8, "fuel": "diesel", "battery": "105D31" }
+        ]}
       ]
     },
     {
       "make": "BMW",
       "models": [
-        {
-          "name": "3 Series",
-          "years": "2019-2024",
-          "engines": [
-            { "label": "Various (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" }
-          ]
-        }
+        { "name": "3 Series", "years": "2019-2024", "engines": [
+          { "label": "330i 2.0L Turbo (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" },
+          { "label": "320i 2.0L Turbo (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" },
+          { "label": "320d 2.0L Diesel (AGM)", "displacement": 2.0, "fuel": "diesel", "battery": "DIN60038" }
+        ]},
+        { "name": "5 Series", "years": "2017-2024", "engines": [
+          { "label": "530i 2.0L Turbo (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN60038" },
+          { "label": "530d 3.0L Diesel (AGM)", "displacement": 3.0, "fuel": "diesel", "battery": "DIN60038" }
+        ]},
+        { "name": "X5", "years": "2019-2024", "engines": [
+          { "label": "xDrive40i 3.0L Turbo (AGM)", "displacement": 3.0, "fuel": "gasoline", "battery": "DIN60038" }
+        ]}
       ]
     },
     {
       "make": "Mercedes-Benz",
       "models": [
-        {
-          "name": "C-Class",
-          "years": "2015-2024",
-          "engines": [
-            { "label": "Various (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" }
-          ]
-        }
+        { "name": "C-Class", "years": "2015-2024", "engines": [
+          { "label": "C200 2.0L Turbo (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" },
+          { "label": "C300 2.0L Turbo (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" }
+        ]},
+        { "name": "E-Class", "years": "2016-2024", "engines": [
+          { "label": "E200 2.0L Turbo (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN60038" },
+          { "label": "E300 2.0L Turbo (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN60038" }
+        ]},
+        { "name": "G-Class", "years": "2016-2024", "engines": [
+          { "label": "G63 4.0L V8 (AGM)", "displacement": 4.0, "fuel": "gasoline", "battery": "DIN60038" }
+        ]}
+      ]
+    },
+    {
+      "make": "Volkswagen",
+      "models": [
+        { "name": "Golf", "years": "2015-2024", "engines": [
+          { "label": "1.4L TSI Petrol", "displacement": 1.4, "fuel": "gasoline", "battery": "56638" },
+          { "label": "2.0L TDI Diesel", "displacement": 2.0, "fuel": "diesel", "battery": "DIN58043" }
+        ]},
+        { "name": "Passat", "years": "2015-2024", "engines": [
+          { "label": "2.0L TDI Diesel", "displacement": 2.0, "fuel": "diesel", "battery": "DIN58043" }
+        ]},
+        { "name": "Amarok", "years": "2010-2024", "engines": [
+          { "label": "3.0L V6 Diesel", "displacement": 3.0, "fuel": "diesel", "battery": "DIN60038" },
+          { "label": "2.0L Diesel (Bi-Turbo)", "displacement": 2.0, "fuel": "diesel", "battery": "105D31" }
+        ]},
+        { "name": "Tiguan", "years": "2016-2024", "engines": [
+          { "label": "2.0L TSI Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" },
+          { "label": "2.0L TDI Diesel", "displacement": 2.0, "fuel": "diesel", "battery": "DIN58043" }
+        ]}
+      ]
+    },
+    {
+      "make": "Audi",
+      "models": [
+        { "name": "A4", "years": "2016-2024", "engines": [
+          { "label": "2.0L TFSI Petrol (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" }
+        ]},
+        { "name": "Q5", "years": "2017-2024", "engines": [
+          { "label": "2.0L TFSI Petrol (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN60038" },
+          { "label": "3.0L TDI Diesel (AGM)", "displacement": 3.0, "fuel": "diesel", "battery": "DIN60038" }
+        ]}
+      ]
+    },
+    {
+      "make": "Land Rover",
+      "models": [
+        { "name": "Range Rover", "years": "2016-2024", "engines": [
+          { "label": "3.0L TDV6 Diesel (AGM)", "displacement": 3.0, "fuel": "diesel", "battery": "DIN60038" },
+          { "label": "5.0L V8 Petrol (AGM)", "displacement": 5.0, "fuel": "gasoline", "battery": "DIN60038" }
+        ]},
+        { "name": "Discovery", "years": "2017-2024", "engines": [
+          { "label": "3.0L SDV6 Diesel (AGM)", "displacement": 3.0, "fuel": "diesel", "battery": "DIN60038" }
+        ]}
+      ]
+    },
+    {
+      "make": "Volvo",
+      "models": [
+        { "name": "XC60", "years": "2018-2024", "engines": [
+          { "label": "2.0L T5 Petrol (AGM)", "displacement": 2.0, "fuel": "gasoline", "battery": "DIN58043" }
+        ]},
+        { "name": "XC90", "years": "2016-2024", "engines": [
+          { "label": "2.0L D5 Diesel (AGM)", "displacement": 2.0, "fuel": "diesel", "battery": "DIN60038" }
+        ]}
+      ]
+    },
+    {
+      "make": "Peugeot",
+      "models": [
+        { "name": "3008", "years": "2017-2024", "engines": [
+          { "label": "1.6L THP Petrol", "displacement": 1.6, "fuel": "gasoline", "battery": "56638" },
+          { "label": "2.0L BlueHDi Diesel", "displacement": 2.0, "fuel": "diesel", "battery": "DIN58043" }
+        ]},
+        { "name": "5008", "years": "2018-2024", "engines": [
+          { "label": "2.0L BlueHDi Diesel", "displacement": 2.0, "fuel": "diesel", "battery": "DIN58043" }
+        ]}
+      ]
+    },
+    {
+      "make": "Renault",
+      "models": [
+        { "name": "Duster", "years": "2018-2024", "engines": [
+          { "label": "1.6L Petrol", "displacement": 1.6, "fuel": "gasoline", "battery": "55B24" },
+          { "label": "1.5L dCi Diesel", "displacement": 1.5, "fuel": "diesel", "battery": "56638" }
+        ]},
+        { "name": "Koleos", "years": "2017-2024", "engines": [
+          { "label": "2.5L Petrol", "displacement": 2.5, "fuel": "gasoline", "battery": "65D26" }
+        ]}
+      ]
+    },
+    {
+      "make": "Great Wall",
+      "models": [
+        { "name": "Haval H6", "years": "2017-2024", "engines": [
+          { "label": "1.5L Turbo Petrol", "displacement": 1.5, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.0L Turbo Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "65D26" }
+        ]},
+        { "name": "Poer / Cannon", "years": "2020-2024", "engines": [
+          { "label": "2.0L Turbo Diesel", "displacement": 2.0, "fuel": "diesel", "battery": "105D31" }
+        ]}
+      ]
+    },
+    {
+      "make": "Jeep",
+      "models": [
+        { "name": "Wrangler", "years": "2018-2024", "engines": [
+          { "label": "3.6L V6 Petrol", "displacement": 3.6, "fuel": "gasoline", "battery": "65D26" }
+        ]},
+        { "name": "Grand Cherokee", "years": "2016-2024", "engines": [
+          { "label": "3.6L V6 Petrol", "displacement": 3.6, "fuel": "gasoline", "battery": "65D26" },
+          { "label": "3.0L V6 Diesel", "displacement": 3.0, "fuel": "diesel", "battery": "95E41" }
+        ]}
+      ]
+    },
+    {
+      "make": "Subaru",
+      "models": [
+        { "name": "Forester", "years": "2014-2024", "engines": [
+          { "label": "2.0L Petrol", "displacement": 2.0, "fuel": "gasoline", "battery": "55D23" },
+          { "label": "2.5L Petrol", "displacement": 2.5, "fuel": "gasoline", "battery": "65D26" }
+        ]},
+        { "name": "Outback", "years": "2015-2024", "engines": [
+          { "label": "2.5L Petrol", "displacement": 2.5, "fuel": "gasoline", "battery": "65D26" }
+        ]}
       ]
     }
   ],
   "batterySpecs": {
-    "55B24": { "model": "CG-55B24", "type": "JIS", "cca": 370, "ah": 45, "dimensions": "238×129×227 mm", "terminal": "JIS T1 (pencil post)", "voltage": "12V", "description": "Compact battery for small-medium petrol engines" },
-    "55D23": { "model": "CG-55D23", "type": "JIS", "cca": 500, "ah": 60, "dimensions": "232×173×225 mm", "terminal": "SAE post", "voltage": "12V", "description": "Mid-size battery for 4-cylinder petrol engines" },
-    "65D26": { "model": "CG-65D26", "type": "JIS", "cca": 520, "ah": 65, "dimensions": "260×173×225 mm", "terminal": "SAE post", "voltage": "12V", "description": "Standard battery for larger petrol/V6 engines" },
-    "95E41": { "model": "CG-95E41", "type": "JIS", "cca": 750, "ah": 80, "dimensions": "306×173×225 mm", "terminal": "SAE post", "voltage": "12V", "description": "Heavy-duty battery for trucks and large SUVs" },
-    "105D31": { "model": "CG-105D31", "type": "JIS", "cca": 650, "ah": 75, "dimensions": "302×173×225 mm", "terminal": "SAE post", "voltage": "12V", "description": "Diesel-grade battery for pickups and SUVs" },
-    "145G51": { "model": "CG-145G51", "type": "JIS", "cca": 850, "ah": 90, "dimensions": "330×173×240 mm", "terminal": "SAE post", "voltage": "12V", "description": "Extra-heavy-duty for commercial vehicles" },
-    "190H52": { "model": "CG-190H52", "type": "JIS", "cca": 1100, "ah": 110, "dimensions": "350×173×240 mm", "terminal": "SAE post", "voltage": "12V", "description": "Maximum-power battery for heavy equipment" },
-    "56638": { "model": "CG-56638", "type": "DIN", "cca": 540, "ah": 66, "dimensions": "278×175×175 mm", "terminal": "SAE post", "voltage": "12V", "description": "DIN standard battery for European vehicles" },
-    "DIN58043": { "model": "CG-DIN58043", "type": "DIN", "cca": 580, "ah": 74, "dimensions": "315×175×175 mm", "terminal": "SAE post", "voltage": "12V", "description": "AGM-compatible DIN battery for European luxury" },
-    "DIN60038": { "model": "CG-DIN60038", "type": "DIN", "cca": 870, "ah": 100, "dimensions": "353×175×190 mm", "terminal": "SAE post", "voltage": "12V", "description": "High-power DIN for large diesel engines" }
+    "55B24": { "model": "CG-55B24", "type": "JIS", "cca": 370, "ah": 45, "dimensions": "238×129×227 mm", "terminal": "JIS T1 (small)", "voltage": "12V", "description": "Compact battery for small petrol engines — Toyota Corolla, Honda Civic, Suzuki Swift" },
+    "55D23": { "model": "CG-55D23", "type": "JIS", "cca": 500, "ah": 60, "dimensions": "232×173×225 mm", "terminal": "JIS T1 (small)", "voltage": "12V", "description": "Mid-size battery for 4-cylinder petrol engines — Toyota Camry, Honda CR-V, Mazda 3" },
+    "65D26": { "model": "CG-65D26", "type": "JIS", "cca": 520, "ah": 65, "dimensions": "260×173×225 mm", "terminal": "JIS T1 (small)", "voltage": "12V", "description": "Larger battery for V6 engines and SUVs — Toyota Prado, Nissan X-Trail, Honda Accord" },
+    "95E41": { "model": "CG-95E41", "type": "JIS", "cca": 750, "ah": 80, "dimensions": "410×176×233 mm", "terminal": "JIS T1 (large)", "voltage": "12V", "description": "Heavy-duty for large SUVs and V8 engines — Land Cruiser, Patrol, Pajero" },
+    "105D31": { "model": "CG-105D31", "type": "JIS", "cca": 650, "ah": 75, "dimensions": "306×173×225 mm", "terminal": "JIS T1 (large)", "voltage": "12V", "description": "Diesel-grade for pickups and off-road — Hilux, Navara, Ranger, D-Max, Triton" },
+    "145G51": { "model": "CG-145G51", "type": "JIS", "cca": 850, "ah": 90, "dimensions": "508×222×240 mm", "terminal": "JIS T1 (large)", "voltage": "12V", "description": "Extra-heavy-duty for commercial vehicles and V8 diesel — Land Cruiser diesel" },
+    "190H52": { "model": "CG-190H52", "type": "JIS", "cca": 1100, "ah": 110, "dimensions": "521×278×270 mm", "terminal": "JIS T1 (large)", "voltage": "12V", "description": "Maximum-power for heavy trucks, buses, and construction equipment" },
+    "56638": { "model": "CG-56638", "type": "DIN", "cca": 540, "ah": 66, "dimensions": "278×175×175 mm", "terminal": "DIN post", "voltage": "12V", "description": "DIN standard for compact European cars — VW Golf, Peugeot 3008, Renault Duster" },
+    "DIN58043": { "model": "CG-DIN58043", "type": "DIN", "cca": 580, "ah": 74, "dimensions": "315×175×175 mm", "terminal": "DIN post", "voltage": "12V", "description": "AGM-compatible DIN for European mid-size — BMW 3 Series, Mercedes C-Class, Audi A4, VW Passat" },
+    "DIN60038": { "model": "CG-DIN60038", "type": "DIN", "cca": 870, "ah": 100, "dimensions": "353×175×190 mm", "terminal": "DIN post", "voltage": "12V", "description": "High-power DIN for large diesel and luxury — Range Rover, BMW X5, VW Amarok, Ford Ranger 3.2" }
   },
   "regions": [
-    { "code": "asia", "name": "Asia Pacific", "note": "JIS standard prevalent" },
-    { "code": "europe", "name": "Europe", "note": "DIN/EN standard prevalent" },
-    { "code": "americas", "name": "Americas", "note": "BCI/SAE standard prevalent" },
-    { "code": "mena", "name": "Middle East & Africa", "note": "Mixed JIS/DIN/SAE" }
+    { "code": "asia", "name": "Asia Pacific", "note": "JIS standard prevalent — Toyota, Honda, Nissan, Mitsubishi dominant" },
+    { "code": "europe", "name": "Europe", "note": "DIN/EN standard prevalent — BMW, Mercedes, VW, Audi, Peugeot, Renault" },
+    { "code": "africa", "name": "Africa", "note": "Mixed JIS/DIN — Toyota, Nissan, Ford, Mercedes prevalent" },
+    { "code": "mena", "name": "Middle East", "note": "JIS dominant with growing DIN — Toyota Land Cruiser, Nissan Patrol, Lexus" },
+    { "code": "oceania", "name": "Australia & NZ", "note": "JIS with AS standard — Toyota, Ford, Mazda, Mitsubishi" },
+    { "code": "americas", "name": "Americas", "note": "BCI/SAE standard prevalent — cross-reference with data.chengguangenergy.com" }
   ]
 }

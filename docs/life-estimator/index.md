@@ -1,3 +1,5 @@
+<style>[x-cloak] { display: none !important; }</style>
+
 # 📈 Battery Life Estimator
 
 Estimate the remaining life of your battery based on type, age, climate, and driving habits.
@@ -49,7 +51,7 @@ Estimate the remaining life of your battery based on type, age, climate, and dri
 <button class="cg-btn" @click="calculate()" :disabled="!canCalculate">📈 Estimate Remaining Life</button>
 
 <!-- Result -->
-<div x-show="result" x-transition class="cg-result" style="display:none;">
+<div x-show="result" x-transition x-cloak class="cg-result">
   <h4>📊 Life Estimation</h4>
   <div class="spec-row"><span class="spec-label">Battery Type</span><span class="spec-value" x-text="typeLabel"></span></div>
   <div class="spec-row"><span class="spec-label">Age</span><span class="spec-value" x-text="ageLabel"></span></div>

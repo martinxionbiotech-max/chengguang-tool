@@ -124,13 +124,12 @@ function runtimeCalculator() {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "Battery Runtime Calculator",
   "url": "https://tool.chengguangenergy.com/runtime-calculator/",
   "description": "Estimate how long a battery can run your devices — calculate runtime for camping, tailgating, or emergency power based on battery capacity and load.",
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": {
     "@type": "Organization",
     "name": "Chengguang Power Tech Co., Ltd.",

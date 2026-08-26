@@ -214,13 +214,12 @@ function terminalGuide() {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "Battery Terminal Type Guide",
   "url": "https://tool.chengguangenergy.com/terminal-guide/",
   "description": "Interactive guide to identify automotive battery terminal types — SAE/DIN post, JIS T1, side terminal, stud terminal — with illustrations and fitment information.",
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": {
     "@type": "Organization",
     "name": "Chengguang Power Tech Co., Ltd.",

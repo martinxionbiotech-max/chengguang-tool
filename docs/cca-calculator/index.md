@@ -119,13 +119,12 @@ function ccaCalculator() {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "CCA Calculator",
   "url": "https://tool.chengguangenergy.com/cca-calculator/",
   "description": "Calculate the recommended Cold Cranking Amps for your vehicle based on engine displacement, fuel type, and climate temperature range.",
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": {
     "@type": "Organization",
     "name": "Chengguang Power Tech Co., Ltd.",

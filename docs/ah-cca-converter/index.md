@@ -160,13 +160,12 @@ function ahCcaConverter() {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "Ah↔CCA Converter",
   "url": "https://tool.chengguangenergy.com/ah-cca-converter/",
   "description": "Quick bidirectional conversion between Amp-hours (Ah) and Cold Cranking Amps (CCA) for lead-acid automotive batteries.",
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": {
     "@type": "Organization",
     "name": "Chengguang Power Tech Co., Ltd.",

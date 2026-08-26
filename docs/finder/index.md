@@ -179,13 +179,12 @@ function batteryFinder() {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "Battery Finder",
   "url": "https://tool.chengguangenergy.com/finder/",
   "description": "Find the correct Chengguang battery for your vehicle — select make, model, engine, and region to get the recommended battery model with full specifications.",
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": {
     "@type": "Organization",
     "name": "Chengguang Power Tech Co., Ltd.",

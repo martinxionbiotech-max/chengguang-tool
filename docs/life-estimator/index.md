@@ -159,13 +159,12 @@ function lifeEstimator() {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "Battery Life Estimator",
   "url": "https://tool.chengguangenergy.com/life-estimator/",
   "description": "Estimate how much life remains in your car battery based on age, climate, driving habits, and battery technology type.",
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": {
     "@type": "Organization",
     "name": "Chengguang Power Tech Co., Ltd.",

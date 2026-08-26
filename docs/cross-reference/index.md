@@ -145,13 +145,12 @@ function crossReference() {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "JIS↔DIN Battery Cross-Reference",
   "url": "https://tool.chengguangenergy.com/cross-reference/",
   "description": "Cross-reference between JIS and DIN automotive battery standards with dimension comparison and fit compatibility warnings.",
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": {
     "@type": "Organization",
     "name": "Chengguang Power Tech Co., Ltd.",

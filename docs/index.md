@@ -14,7 +14,6 @@ hide:
   "description": "Free interactive automotive battery tools — finder, CCA calculator, JIS↔DIN cross-reference, runtime and life estimators.",
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": {
     "@type": "Organization",
     "name": "Chengguang Power Tech Co., Ltd.",

@@ -3,6 +3,7 @@ site_url: https://tool.chengguangenergy.com/
 site_description: Free interactive battery tools — finder, CCA calculator, JIS↔DIN cross-reference, runtime & life estimators. Built by Chengguang Power Tech, IATF 16949 certified OEM battery manufacturer.
 theme:
   name: material
+  custom_dir: overrides
   palette:
     primary: deep purple
     accent: purple

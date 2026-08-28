@@ -167,6 +167,7 @@ function ahCcaConverter() {
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web",
   "author": {
+    "@id": "https://chengguangenergy.com/#organization",
     "@type": "Organization",
     "name": "Chengguang Power Tech Co., Ltd.",
     "url": "https://chengguangenergy.com/"

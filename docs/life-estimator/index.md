@@ -1,14 +1,12 @@
-<style>[x-cloak] { display: none !important; }</style>
-
 # 📈 Battery Life Estimator
 
 Estimate the remaining life of your battery based on type, age, climate, and driving habits.
 
 ---
 
-<div x-data="lifeEstimator()" class="tool-card" markdown="1">
+<div x-data="lifeEstimator()" class="tool-card">
 
-### Battery Information
+<h3>Battery Information</h3>
 
 <div class="cg-form-group">
   <label class="cg-label">Battery Type</label>

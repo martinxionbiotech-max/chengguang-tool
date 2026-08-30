@@ -1,5 +1,7 @@
 /* Chengguang Battery Tools — Extra Styles */
 
+[x-cloak] { display: none !important; }
+
 :root {
   --cg-purple: #7c3aed;
   --cg-purple-dark: #5b21b6;

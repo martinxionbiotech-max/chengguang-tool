@@ -25,7 +25,9 @@
 /* Form controls */
 .cg-select, .cg-input {
   width: 100%;
-  max-width: 420px;
+  max-width: min(420px, 100%);
+  min-width: 0;
+  box-sizing: border-box;
   padding: 10px 14px;
   border: 2px solid #d8b4fe;
   border-radius: 8px;
@@ -147,7 +149,9 @@
 /* Slider */
 .cg-slider {
   width: 100%;
-  max-width: 420px;
+  max-width: min(420px, 100%);
+  min-width: 0;
+  box-sizing: border-box;
   -webkit-appearance: none;
   appearance: none;
   height: 8px;

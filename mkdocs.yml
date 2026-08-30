@@ -44,6 +44,9 @@ nav:
   - Life Estimator: life-estimator/index.md
   - Ah↔CCA Converter: ah-cca-converter/index.md
   - Terminal Guide: terminal-guide/index.md
+  - Reserve Capacity Calculator: reserve-capacity-calculator/index.md
+  - Battery Bank Sizing: battery-bank-sizing/index.md
+  - AGM vs EFB vs SLI Selector: battery-technology-selector/index.md
   - Articles:
       - What is CCA?: articles/what-is-cca.md
       - Battery Life by Climate: articles/battery-life-by-climate.md

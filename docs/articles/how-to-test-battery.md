@@ -203,3 +203,5 @@ Conductance test with a professional analyzer (Midtronics-type) — measures act
 ---
 
 *[Chengguang Battery Knowledge Ecosystem](https://chengguangenergy.com/) | [Life Estimator →](../life-estimator/index.md) | [Battery Finder →](../finder/index.md)*
+
+*Last updated: 2026-08-12 | Author: Chengguang Power Tech Technical Team | [Chengguang Power Tech Co., Ltd.](https://chengguangenergy.com/)*

@@ -32,7 +32,10 @@ hide:
     { "@type": "WebApplication", "name": "Battery Runtime Calculator", "url": "https://tool.chengguangenergy.com/runtime-calculator/" },
     { "@type": "WebApplication", "name": "Battery Life Estimator", "url": "https://tool.chengguangenergy.com/life-estimator/" },
     { "@type": "WebApplication", "name": "Ah↔CCA Converter", "url": "https://tool.chengguangenergy.com/ah-cca-converter/" },
-    { "@type": "WebApplication", "name": "Terminal Type Guide", "url": "https://tool.chengguangenergy.com/terminal-guide/" }
+    { "@type": "WebApplication", "name": "Terminal Type Guide", "url": "https://tool.chengguangenergy.com/terminal-guide/" },
+    { "@type": "WebApplication", "name": "Reserve Capacity Calculator", "url": "https://tool.chengguangenergy.com/reserve-capacity-calculator/" },
+    { "@type": "WebApplication", "name": "Battery Bank Sizing Calculator", "url": "https://tool.chengguangenergy.com/battery-bank-sizing/" },
+    { "@type": "WebApplication", "name": "AGM vs EFB vs SLI Selector", "url": "https://tool.chengguangenergy.com/battery-technology-selector/" }
   ]
 }
 </script>
@@ -89,6 +92,24 @@ Free interactive tools to help you find, size, and understand automotive batteri
     Interactive decision tree to identify battery terminal types — SAE, JIS T1, side, stud.
     
     [:octicons-arrow-right-24: Launch](terminal-guide/index.md)
+
+-   :material-timer-outline: **Reserve Capacity Calculator**
+    ---
+    Estimate reserve-capacity minutes from battery Ah and typical accessory load.
+    
+    [:octicons-arrow-right-24: Launch](reserve-capacity-calculator/index.md)
+
+-   :material-battery-charging: **Battery Bank Sizing**
+    ---
+    Size RV, marine, or solar battery banks with 12V/24V series-parallel configuration.
+    
+    [:octicons-arrow-right-24: Launch](battery-bank-sizing/index.md)
+
+-   :material-compare-horizontal: **AGM vs EFB vs SLI Selector**
+    ---
+    Get a recommended battery technology from vehicle type, start-stop, and climate.
+    
+    [:octicons-arrow-right-24: Launch](battery-technology-selector/index.md)
 
 </div>
 

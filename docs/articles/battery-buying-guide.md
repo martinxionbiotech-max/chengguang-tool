@@ -214,3 +214,5 @@ SLI: 12–24 mo free replacement. AGM: 24–36 mo. Hot climate warranties are sh
 ---
 
 *[Chengguang Battery Knowledge Ecosystem](https://chengguangenergy.com/) | [Battery Finder →](../finder/index.md) | [OEM Process →](https://oem.chengguangenergy.com/oem-process/)*
+
+*Last updated: 2026-08-12 | Author: Chengguang Power Tech Technical Team | [Chengguang Power Tech Co., Ltd.](https://chengguangenergy.com/)*

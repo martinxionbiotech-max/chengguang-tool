@@ -230,3 +230,5 @@ CCA drops 15–25%/year in 35°C+ climates vs 5–10% in temperate. A 600 CCA ba
 ---
 
 *[Chengguang Battery Knowledge Ecosystem](https://chengguangenergy.com/) | [Find your battery →](../finder/index.md) | [Calculate CCA →](../cca-calculator/index.md)*
+
+*Last updated: 2026-08-12 | Author: Chengguang Power Tech Technical Team | [Chengguang Power Tech Co., Ltd.](https://chengguangenergy.com/)*

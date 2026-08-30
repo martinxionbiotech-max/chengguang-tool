@@ -9,6 +9,9 @@
 - [Life Estimator](https://tool.chengguangenergy.com/life-estimator/): Predict remaining battery life by age, climate, and usage
 - [Ah↔CCA Converter](https://tool.chengguangenergy.com/ah-cca-converter/): Bidirectional Amp-hours to Cold Cranking Amps conversion
 - [Terminal Guide](https://tool.chengguangenergy.com/terminal-guide/): Interactive decision tree for battery terminal identification
+- [Reserve Capacity Calculator](https://tool.chengguangenergy.com/reserve-capacity-calculator/): Estimate reserve-capacity minutes from Ah and load
+- [Battery Bank Sizing](https://tool.chengguangenergy.com/battery-bank-sizing/): Size RV/marine/solar banks with 12V/24V series-parallel config
+- [AGM vs EFB vs SLI Selector](https://tool.chengguangenergy.com/battery-technology-selector/): Recommend battery technology from vehicle, start-stop, and climate
 
 ## Articles
 - [What is CCA?](https://tool.chengguangenergy.com/articles/what-is-cca/): Complete guide to Cold Cranking Amps

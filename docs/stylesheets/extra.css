@@ -125,6 +125,13 @@
 .cg-result .spec-value {
   font-weight: 700;
   color: #4c1d95;
+  overflow-wrap: anywhere;
+}
+
+/* Scale inline SVG illustrations down on narrow screens */
+.cg-result svg {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Warning / info boxes */
@@ -252,5 +259,15 @@
   .ecosystem-links {
     flex-direction: column;
     align-items: center;
+  }
+  /* Stack label above value so long spec text never crams on one line */
+  .cg-result .spec-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+  .cg-result .spec-value {
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 }

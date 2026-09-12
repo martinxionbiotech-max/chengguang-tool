@@ -226,3 +226,9 @@ Runtime falls faster than a simple linear estimate because high discharge rates 
 
 ### Are these results exact?
 No. Results are honest planning estimates based on rated capacity and typical usable depth. Actual runtime depends on temperature, battery age, state of health, and load profile.
+
+## Related resources
+
+- [Reserve capacity testing](https://technical.chengguangenergy.com/battery-testing/reserve-capacity/) — the RC test explained
+- [C20 capacity testing](https://technical.chengguangenergy.com/battery-testing/c20-capacity/) — how stored energy is measured
+- [Battery model database](https://data.chengguangenergy.com/battery-models/) — reference RC values

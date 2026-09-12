@@ -253,3 +253,10 @@ Climate mainly affects the CCA and heat rating you choose. Cold climates favor h
 
 ### Can Chengguang supply all of these technologies?
 Chengguang manufactures a standard SLI range plus Heavy Duty models, and offers EFB and AGM on request for OEM supply.
+
+## Related resources
+
+- [AGM battery technology](https://technical.chengguangenergy.com/battery-technology/agm/) — construction and duty
+- [EFB battery technology](https://technical.chengguangenergy.com/battery-technology/efb/) — enhanced flooded construction
+- [SLI battery technology](https://technical.chengguangenergy.com/battery-technology/sli/) — the baseline type
+- [Battery model database](https://data.chengguangenergy.com/battery-models/) — model-level specifications

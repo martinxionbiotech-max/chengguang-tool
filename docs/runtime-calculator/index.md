@@ -230,3 +230,9 @@ Yes. If you run the battery below 12.0V (approximately 50% discharge), the vehic
 
 ### How do I recharge after running accessories?
 Drive for at least 30 minutes at highway speeds, or use a smart battery charger. A deeply discharged battery may need 4-8 hours on a charger.
+
+## Related resources
+
+- [Reserve capacity testing](https://technical.chengguangenergy.com/battery-testing/reserve-capacity/) — how RC is defined
+- [Battery model database](https://data.chengguangenergy.com/battery-models/) — RC and capacity by model
+- [Battery technology guide](https://technical.chengguangenergy.com/battery-technology/) — SLI, EFB and AGM duty cycles

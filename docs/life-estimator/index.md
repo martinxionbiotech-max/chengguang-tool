@@ -263,3 +263,9 @@ Replace when: age exceeds 4 years in hot climates or 5 years in temperate, CCA d
 
 ### Can I still use a battery that tested at 60-70% health?
 In temperate climates and non-critical use — yes, but monitor closely and plan replacement within 3-6 months. In cold climates or for vehicles you depend on — replace now. A 60% battery may fail to start on a cold morning.
+
+## Related resources
+
+- [Charge acceptance testing](https://technical.chengguangenergy.com/battery-testing/charge-acceptance/) — why partial recharge shortens life
+- [Battery technology guide](https://technical.chengguangenergy.com/battery-technology/) — how technology affects service life
+- [Battery maintenance guide](https://tool.chengguangenergy.com/articles/battery-maintenance/) — monthly care checklist

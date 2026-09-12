@@ -251,3 +251,9 @@ If your vehicle has adjustable or replaceable hold-down brackets, conversion is 
 
 ### Do I need to change anything else when switching battery standards?
 Check: 1) Terminal cable reach — DIN terminals may be in different positions, 2) Battery tray dimensions — JIS trays are often taller, 3) Hood clearance — taller JIS batteries may not fit in DIN-designed engine bays.
+
+## Related resources
+
+- [Cross-reference charts](https://data.chengguangenergy.com/cross-reference/) — full JIS ↔ DIN ↔ BCI tables
+- [Battery model database](https://data.chengguangenergy.com/battery-models/) — model-level specifications
+- [Terminal guide](https://data.chengguangenergy.com/terminals/) — terminal types and polarity

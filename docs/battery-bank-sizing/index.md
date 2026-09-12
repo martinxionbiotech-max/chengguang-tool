@@ -256,3 +256,9 @@ Use 30-50% for flooded and deep-cycle batteries to maximize service life, or up 
 
 ### Does this replace a professional design review?
 No. This is a sizing estimate, not a substitute for professional review of cable sizing, fusing, ventilation, charging, and local electrical codes.
+
+## Related resources
+
+- [Battery technology guide](https://technical.chengguangenergy.com/battery-technology/) — deep-cycle vs starting duty
+- [C20 capacity testing](https://technical.chengguangenergy.com/battery-testing/c20-capacity/) — capacity rating explained
+- [Battery model database](https://data.chengguangenergy.com/battery-models/) — reference specifications

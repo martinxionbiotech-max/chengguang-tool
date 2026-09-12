@@ -285,3 +285,9 @@ Yes. Distributors and fleet managers can use the Finder to standardize battery m
 
 ### What do I do after finding my battery model?
 Note the model number and [browse full specifications](https://data.chengguangenergy.com/battery-models/) on our Battery Database, or [start the OEM inquiry process](https://oem.chengguangenergy.com/oem-process/).
+
+## Related resources
+
+- [Battery model database](https://data.chengguangenergy.com/battery-models/) — full JIS and DIN model specifications
+- [Cross-reference charts](https://data.chengguangenergy.com/cross-reference/) — JIS ↔ DIN ↔ BCI equivalents
+- [Battery group guide](https://data.chengguangenergy.com/guides/battery-group-explained/) — how case sizes are defined

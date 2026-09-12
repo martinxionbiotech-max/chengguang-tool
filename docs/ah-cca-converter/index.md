@@ -255,3 +255,9 @@ Using the 7:1 to 10:1 conversion range, a 600 CCA battery typically has 60-85 Ah
 
 ### Can I use this converter for AGM or lithium batteries?
 The 7-10× ratio is specific to flooded lead-acid batteries. AGM batteries typically have a slightly higher CCA-to-Ah ratio (8-11×). Lithium (LiFePO4) batteries have entirely different characteristics and this converter should not be used for them.
+
+## Related resources
+
+- [How CCA is tested](https://technical.chengguangenergy.com/battery-testing/cca/) — why converted values are approximate
+- [C20 capacity testing](https://technical.chengguangenergy.com/battery-testing/c20-capacity/) — how Ah is measured
+- [Battery model database](https://data.chengguangenergy.com/battery-models/) — rated Ah and CCA per model

@@ -309,3 +309,9 @@ JIS T1 terminals come in two sizes: Small T1 (positive terminal ~12.5mm wide, ne
 
 ### Why do different standards use different terminal types?
 Historical and regional preference. Japanese manufacturers standardized on the T1 flat tab for compactness and anti-corrosion benefits. American and European manufacturers continued with the round post design inherited from early automotive electrical systems.
+
+## Related resources
+
+- [Terminal reference](https://data.chengguangenergy.com/terminals/) — terminal types, polarity and hold-down
+- [Battery components](https://technical.chengguangenergy.com/battery-components/) — how terminals are built into the case
+- [Battery model database](https://data.chengguangenergy.com/battery-models/) — terminal type per model

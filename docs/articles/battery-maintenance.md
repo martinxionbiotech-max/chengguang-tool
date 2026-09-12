@@ -209,9 +209,3 @@ Lead sulfate crystals form during discharge. Mild sulfation can be reversed by a
   "dateModified": "2026-08-12"
 }
 </script>
-
----
-
-*[Chengguang Battery Knowledge Ecosystem](https://chengguangenergy.com/) | [Life Estimator →](../life-estimator/index.md) | [Maintenance FAQ →](https://chengguangenergy.com/faqs/)*
-
-*Last updated: 2026-08-12 | Author: Chengguang Power Tech Technical Team | [Chengguang Power Tech Co., Ltd.](https://chengguangenergy.com/)*

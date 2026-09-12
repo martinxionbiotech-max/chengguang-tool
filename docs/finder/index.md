@@ -285,20 +285,3 @@ Yes. Distributors and fleet managers can use the Finder to standardize battery m
 
 ### What do I do after finding my battery model?
 Note the model number and [browse full specifications](https://data.chengguangenergy.com/battery-models/) on our Battery Database, or [start the OEM inquiry process](https://oem.chengguangenergy.com/oem-process/).
-
-
-
----
-
-## :material-family-tree: Chengguang Battery Knowledge Ecosystem
-
-| Site | Purpose |
-|------|---------|
-| :material-domain: **[Main Site](https://chengguangenergy.com/)** | Factory, certifications, contact |
-| :material-car-battery: **[Battery Database](https://data.chengguangenergy.com/)** | Models, specs, cross-reference |
-| :material-bookshelf: **[Technical Center](https://technical.chengguangenergy.com/)** | Technology, engineering, testing |
-| :material-package-variant-closed: **[OEM Manufacturing](https://oem.chengguangenergy.com/)** | Private label, custom, process |
-| :material-earth: **[Market Intelligence](https://market.chengguangenergy.com/)** | Regional demand, trends |
-| :material-tools: **Battery Tools** ← You are here | Finders, calculators, guides |
-
-**Chengguang Power Tech Co., Ltd.** — IATF 16949 certified since 2002. [Visit main site](https://chengguangenergy.com/).

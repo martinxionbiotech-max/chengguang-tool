@@ -225,20 +225,3 @@ Yes. Diesel engines have higher compression ratios (16:1-25:1 vs 8:1-12:1 for ga
 
 ### Are these CCA values SAE, EN, or DIN standard?
 This calculator outputs SAE (American) CCA values. European EN and DIN ratings are slightly different measurement methods. An EN 500A battery roughly equals 550-600 SAE CCA.
-
-
-
----
-
-## :material-family-tree: Chengguang Battery Knowledge Ecosystem
-
-| Site | Purpose |
-|------|---------|
-| :material-domain: **[Main Site](https://chengguangenergy.com/)** | Factory, certifications, contact |
-| :material-car-battery: **[Battery Database](https://data.chengguangenergy.com/)** | Models, specs, cross-reference |
-| :material-bookshelf: **[Technical Center](https://technical.chengguangenergy.com/)** | Technology, engineering, testing |
-| :material-package-variant-closed: **[OEM Manufacturing](https://oem.chengguangenergy.com/)** | Private label, custom, process |
-| :material-earth: **[Market Intelligence](https://market.chengguangenergy.com/)** | Regional demand, trends |
-| :material-tools: **Battery Tools** ← You are here | Finders, calculators, guides |
-
-**Chengguang Power Tech Co., Ltd.** — IATF 16949 certified since 2002. [Visit main site](https://chengguangenergy.com/).

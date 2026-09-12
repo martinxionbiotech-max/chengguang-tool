@@ -251,20 +251,3 @@ If your vehicle has adjustable or replaceable hold-down brackets, conversion is 
 
 ### Do I need to change anything else when switching battery standards?
 Check: 1) Terminal cable reach — DIN terminals may be in different positions, 2) Battery tray dimensions — JIS trays are often taller, 3) Hood clearance — taller JIS batteries may not fit in DIN-designed engine bays.
-
-
-
----
-
-## :material-family-tree: Chengguang Battery Knowledge Ecosystem
-
-| Site | Purpose |
-|------|---------|
-| :material-domain: **[Main Site](https://chengguangenergy.com/)** | Factory, certifications, contact |
-| :material-car-battery: **[Battery Database](https://data.chengguangenergy.com/)** | Models, specs, cross-reference |
-| :material-bookshelf: **[Technical Center](https://technical.chengguangenergy.com/)** | Technology, engineering, testing |
-| :material-package-variant-closed: **[OEM Manufacturing](https://oem.chengguangenergy.com/)** | Private label, custom, process |
-| :material-earth: **[Market Intelligence](https://market.chengguangenergy.com/)** | Regional demand, trends |
-| :material-tools: **Battery Tools** ← You are here | Finders, calculators, guides |
-
-**Chengguang Power Tech Co., Ltd.** — IATF 16949 certified since 2002. [Visit main site](https://chengguangenergy.com/).

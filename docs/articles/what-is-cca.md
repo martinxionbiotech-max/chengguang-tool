@@ -179,9 +179,3 @@ Yes. AGM batteries deliver 15–25% higher CCA than equivalent flooded SLI batte
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tool.chengguangenergy.com/articles/what-is-cca/"}
 }
 </script>
-
----
-
-*Part of the [Chengguang Battery Knowledge Ecosystem](https://chengguangenergy.com/). [Find your battery →](../finder/index.md) | [Calculate CCA →](../cca-calculator/index.md)*
-
-*Last updated: 2026-08-12 | Author: Chengguang Power Tech Technical Team | [Chengguang Power Tech Co., Ltd.](https://chengguangenergy.com/)*

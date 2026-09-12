@@ -146,20 +146,3 @@ Yes. Distributors, mechanics, and fleet managers are welcome to use these tools.
 
 ### How do I get a quote for bulk battery orders?
 Use the [Battery Finder](finder/index.md) to identify your model, then [request a quote](https://chengguangenergy.com/contact/) with the model number and your target volume.
-
-
-
----
-
-## :material-family-tree: Chengguang Battery Knowledge Ecosystem
-
-| Site | Purpose | Key Question |
-|------|---------|-------------|
-| :material-domain: **[Main Site](https://chengguangenergy.com/)** | Factory, certifications, contact | *Why Chengguang?* |
-| :material-car-battery: **[Battery Database](https://data.chengguangenergy.com/)** | Models, specs, cross-reference | *Which battery?* |
-| :material-bookshelf: **[Technical Center](https://technical.chengguangenergy.com/)** | Technology, engineering, testing | *How does it work?* |
-| :material-package-variant-closed: **[OEM Manufacturing](https://oem.chengguangenergy.com/)** | Private label, custom, process | *Build my brand?* |
-| :material-earth: **[Market Intelligence](https://market.chengguangenergy.com/)** | Regional demand, trends | *Where's the opportunity?* |
-| :material-tools: **Battery Tools** ← You are here | Finders, calculators, guides | *What do I need?* |
-
-**Chengguang Power Tech Co., Ltd.** — IATF 16949 certified OEM battery manufacturer since 2002. 200,000 m² factory, 18 production lines, 40,000 batteries/day, exporting to 70+ countries. [Visit main site](https://chengguangenergy.com/).

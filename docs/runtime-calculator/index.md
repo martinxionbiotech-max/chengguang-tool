@@ -230,20 +230,3 @@ Yes. If you run the battery below 12.0V (approximately 50% discharge), the vehic
 
 ### How do I recharge after running accessories?
 Drive for at least 30 minutes at highway speeds, or use a smart battery charger. A deeply discharged battery may need 4-8 hours on a charger.
-
-
-
----
-
-## :material-family-tree: Chengguang Battery Knowledge Ecosystem
-
-| Site | Purpose |
-|------|---------|
-| :material-domain: **[Main Site](https://chengguangenergy.com/)** | Factory, certifications, contact |
-| :material-car-battery: **[Battery Database](https://data.chengguangenergy.com/)** | Models, specs, cross-reference |
-| :material-bookshelf: **[Technical Center](https://technical.chengguangenergy.com/)** | Technology, engineering, testing |
-| :material-package-variant-closed: **[OEM Manufacturing](https://oem.chengguangenergy.com/)** | Private label, custom, process |
-| :material-earth: **[Market Intelligence](https://market.chengguangenergy.com/)** | Regional demand, trends |
-| :material-tools: **Battery Tools** ← You are here | Finders, calculators, guides |
-
-**Chengguang Power Tech Co., Ltd.** — IATF 16949 certified since 2002. [Visit main site](https://chengguangenergy.com/).

@@ -3,7 +3,6 @@
 {% block extrahead %}
   {{ super() }}
 
-  {# ─── Open Graph + Twitter ─── #}
   <meta property="og:site_name" content="{{ config.site_name }}" />
   <meta property="og:title" content="{% if page and not page.is_homepage %}{{ page.title }}{% else %}{{ config.site_name }}{% endif %}" />
   <meta property="og:description" content="{{ page.meta.description if page and page.meta and page.meta.description else config.site_description }}" />
@@ -26,7 +25,7 @@
     "name": "Chengguang Power Tech Co., Ltd.",
     "url": "https://chengguangenergy.com/",
     "logo": "https://data.chengguangenergy.com/assets/chengguang-logo.png",
-    "description": "IATF 16949 certified OEM automotive battery manufacturer since 2002. 200,000 m² factory, 18 production lines, 40,000 batteries/day, exporting to 70+ countries.",
+    "description": "IATF 16949 certified OEM automotive battery manufacturer since 2002. 200,000 m² factory, 18 assembly lines, 40,000 batteries/day, exporting to 70+ countries.",
     "foundingDate": "2002",
     "address": {
       "@type": "PostalAddress",
